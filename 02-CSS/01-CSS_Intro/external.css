@@ -1,0 +1,11 @@
+/*
+div - Selector
+{} - Expression
+height - Property
+color - value
+*/
+
+div {
+    height: 120px;
+    background-color: aqua;
+}
