@@ -1,0 +1,20 @@
+div {
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+#div_1 {
+    background-color: cadetblue;
+}
+
+#div_3 {
+    background-color: darkkhaki;
+}
+
+#div_1, #div_3 {
+    width: 600px;
+}
+
+.class_1 {
+    height: 100px;
+}

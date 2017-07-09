@@ -1,0 +1,27 @@
+#parent_1, #parent_2 {
+    background-color: cadetblue;
+}
+
+.child {
+    background-color: brown;
+}
+
+#parent_1 .child {
+    background-color: darkgoldenrod;
+}
+
+#parent_1 .child .grand_child {
+    background-color: darkturquoise;
+}
+
+#parent_1 .child_2 {
+    background-color: gray;
+}
+
+#parent_2 .great_grand_child {
+    background-color: yellowgreen;
+}
+
+.great_grand_child {
+    background-color: brown;
+}
