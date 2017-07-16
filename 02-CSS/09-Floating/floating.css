@@ -1,0 +1,34 @@
+.parent {
+    background-color: #DFA943;
+    /*height: 380px;*/
+}
+.column_1 {
+    float: left;
+    width: 50%;
+    /*background-color: bisque;*/
+}
+
+.column_2 {
+    float: left;
+    width: 50%;
+    /*background-color: #DFA943;*/
+}
+
+.div_1 {
+    /*clear: left;*/
+    background-color: aquamarine;
+}
+
+/*
+.clear {
+    clear: left;
+}*/
+
+/*
+Pseudo Element - After, Before
+*/
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
