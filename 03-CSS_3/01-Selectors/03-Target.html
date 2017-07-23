@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #content div {
+            height: 550px;
+            text-align: center;
+            padding-top: 60px;
+            display: none;
+        }
+        #home img {
+            width: 100%;
+            max-height: 550px;
+        }
+        #images img {
+            width: 32%;
+        }
+        #header {
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            background-color: #DFA943;
+            text-align: center;
+            padding: 20px 0px;
+        }
+        #content #home {
+            display: block;
+        }
+        #content #messages:target,
+        #content #images:target,
+        #content #contact:target,
+        #content #login:target {
+            display: block;
+        }
+        #content #messages:target ~ #home,
+        #content #images:target ~ #home,
+        #content #contact:target ~ #home,
+        #content #login:target ~ #home {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!--<h1>Target</h1>-->
+
+<div id="header">
+    <a href="#home">Home</a>
+    <a href="#messages">Messages</a>
+    <a href="#images">Images</a>
+    <a href="#contact">Contact</a>
+    <a href="#login">Login</a>
+</div>
+
+<div id="content">
+
+    <div id="messages">
+        <h2>Messages</h2>
+        <ul>
+            <li>Ram - Hey...</li>
+            <li>Ram - Hey...</li>
+            <li>Ram - Hey...</li>
+            <li>Ram - Hey...</li>
+            <li>Ram - Hey...</li>
+            <li>Ram - Hey...</li>
+        </ul>
+    </div>
+
+    <div id="images">
+        <h2>Images</h2>
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+        <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="image"/>
+    </div>
+
+    <div id="contact">
+        <h3>Contact Us - 9078978967</h3>
+    </div>
+
+    <div id="login">
+        <h2>Login</h2>
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td><input type="text"/></td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td><input type="password"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit"/></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="home">
+        <h2>Home</h2>
+        <img src="../../images/NewImages/3d-abstract-dead-city-wallpaper.jpg" alt=""/>
+    </div>
+
+
+</div>
+
+</body>
+</html>
