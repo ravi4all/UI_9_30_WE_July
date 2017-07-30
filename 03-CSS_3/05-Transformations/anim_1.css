@@ -1,0 +1,25 @@
+#earth {
+    height: 250px;
+    width: 250px;
+    background-image: url("../../images/00-22.gif");
+    background-size: 100% 100%;
+    margin: 100px auto 0px;
+}
+
+#rocket {
+    background-image: url("http://www.freeiconspng.com/uploads/red-rocket-png-5.png");
+    width: 550px;
+    height: 100px;
+    background-repeat: no-repeat;
+    /*border: 2px solid red;*/
+    background-size: auto 100%;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    transition: 20s;
+    transition-timing-function: linear;
+}
+
+body:hover #rocket {
+    transform: rotate(3600deg);
+}
