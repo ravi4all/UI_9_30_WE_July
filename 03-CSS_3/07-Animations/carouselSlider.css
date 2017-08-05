@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#slider {
+    width: 500%;
+    position: absolute;
+    left: 0%;
+    animation: carousel 20s infinite;
+}
+#slider .slide {
+    float: left;
+    width: 20%;
+}
+img {
+    height: 600px;
+    width: 100%;
+}
+
+@keyframes carousel {
+    0% {
+        left: 0%;
+    }
+    15% {
+        left: 0%;
+    }
+    20% {
+        left: -100%;
+    }
+    35% {
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    55% {
+        left: -200%;
+    }
+    60% {
+        left: -300%;
+    }
+    75% {
+        left: -300%;
+    }
+    80% {
+        left: -400%;
+    }
+    95% {
+        left: -400%;
+    }
+    100% {
+        left: -400%;
+    }
+}

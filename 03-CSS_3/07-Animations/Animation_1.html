@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        #div_1 {
+            border: 2px solid red;
+        }
+        #div_1 img {
+            animation: moving_img 7s;
+        }
+        @keyframes moving_img {
+            0% {
+                transform: translate(0px,0px);
+            }
+            75% {
+                transform: translate(1000px, 0px) rotateZ(0deg);
+            }
+            100% {
+                transform: translate(0px,400px) rotateZ(-1080deg);
+            }
+        }
+
+        .img_2 {
+            animation: thor 1s;
+            animation-fill-mode: forwards;
+            animation-delay: 4.5s;
+            right: -100%;
+            width: 20%;
+            position: absolute;
+            top: 6%;
+        }
+        @keyframes thor {
+            0% {
+                right: -100%;
+            }
+            100% {
+                right: 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="div_1">
+    <img src="../../images/hulk5-18463.gif" alt="img"/>
+</div>
+
+<img src="../../images/NewImages/NiiP10g.png" class="img_2" alt="image"/>
+
+</body>
+</html>

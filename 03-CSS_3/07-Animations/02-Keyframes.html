@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+        img {
+            animation: moving_img 10s infinite;
+        }
+        @keyframes moving_img {
+            0% {
+                transform: translate(0px,0px);
+            }
+            50% {
+                transform: translate(1000px, 0px);
+            }
+            51% {
+                transform: translate(1000px, 0px) rotateY(180deg);
+            }
+            100% {
+                transform: translate(0px,0px) rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <img src="../../images/hulk5-18463.gif" alt="img"/>
+</div>
+
+</body>
+</html>
