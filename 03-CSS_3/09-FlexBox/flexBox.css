@@ -1,0 +1,10 @@
+#content {
+    display: flex;
+    border: 1px solid #0077B5;
+    padding: 10px;
+}
+.column {
+    border: 1px solid red;
+    background-color: #CDCDCD;
+    padding: 10px;
+}
