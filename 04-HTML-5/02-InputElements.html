@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Form Elements</h1>
+
+<form action="#">
+    <table>
+        <tr>
+            <td>Enter Name</td>
+            <td><input type="text" value="Ram" placeholder="Enter Name" required/></td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password" value="ram" placeholder="Enter Password" required/></td>
+        </tr>
+        <tr>
+            <td>Enter Email</td>
+            <td><input type="email" autofocus placeholder="Enter Email"/></td>
+        </tr>
+        <tr>
+            <td>Enter Date</td>
+            <td><input type="date"/></td>
+            <td><input type="time"/></td>
+            <td><input type="datetime-local"/></td>
+            <td><input type="month"/></td>
+            <td><input type="week"/></td>
+        </tr>
+        <tr>
+            <td>Enter Number</td>
+            <td><input type="number" min="10" max="20"/></td>
+        </tr>
+        <tr>
+            <td>Enter Mobile No</td>
+            <td><input type="text" placeholder="Enter Mobile Num" maxlength="10"/></td>
+        </tr>
+        <tr>
+            <td>Enter Card No</td>
+            <td><input autocomplete="off" type="text" pattern="[0-9]{5}[a-z]{3}"
+                       title="Enter 5 digits and 3 small alphabets"/></td>
+        </tr>
+        <tr>
+            <td>Choose Color</td>
+            <td><input type="color"/></td>
+        </tr>
+        <tr>
+            <td>Enter URL</td>
+            <td><input type="url"/></td>
+        </tr>
+        <tr>
+            <td>Select Range</td>
+            <td><input type="range" min="1000" max="2000"  step="100"
+                       onchange="op.value=value" value="20"/></td>
+            <td><output id="op">20</output></td>
+        </tr>
+        <tr>
+            <td>Your Progress</td>
+            <td><progress value="30" max="100"></progress></td>
+        </tr>
+        <tr>
+            <td>Enter Message</td>
+            <td><textarea cols="30" rows="10" spellcheck="true" style="resize: none;"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="reset"/></td>
+            <td><input type="submit"/></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
