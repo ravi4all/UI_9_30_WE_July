@@ -1,0 +1,118 @@
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#header {
+    position: fixed;
+    left: 0px;
+}
+#header .inner-header {
+    position: relative;
+    width: 100%;
+}
+#header .logo {
+    text-align: center;
+}
+#header .logo a {
+    display: block;
+    padding: 20px 40px;
+    background-color: #002F52;
+    position: relative;
+}
+#header .logo span{
+    display: block;
+    width: 34px;
+    height: 80px;
+    background: url("../images/global-sprite.png") no-repeat -602px -129px;
+}
+#header .logo a:before {
+    content: "";
+    border: 2px solid #29a9e4;
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    top: 0px;
+    left: 0px;
+}
+
+
+#main-navigation {
+    background-color: #005699;
+    padding: 15px 0px;
+}
+#main-navigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main-navigation ul li a {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    padding: 10px 13px 10px 20px;
+    opacity: 0.8;
+    text-decoration: none;
+}
+#main-navigation ul li:hover a {
+    background-color: #002F52;
+    color: #fff;
+    opacity: 1;
+}
+
+#main-navigation .dropdown {
+    width: 1000px;
+    top: 0px;
+    left: 90px;
+    position: absolute;
+    padding: 50px 40px;
+    background-color: #002F52;
+    transform: translate(-150%, 0%);
+    transition: 0.7s;
+    z-index: -1;
+}
+#main-navigation .dropdown h2 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#main-navigation .dropdown .card-img-top {
+    max-height: 160px;
+}
+
+#main-navigation ul li:hover .dropdown {
+    transform: translate(0%, 0%);
+}
+
+
+#content {
+    
+}
+
+
+#banner {
+    background-image: url("../images/Western-Storm-celebrate.jpg");
+    text-align: right;
+}
+#banner .desc {
+    float: right;
+    width: 500px;
+}
+#banner h1 {
+    width: 500px;
+    padding-top: 250px;
+    text-align: right;
+    margin-bottom: 50px;
+}
+#banner h1 a {
+    color: #fff;
+}
+#banner p {
+    font-size: 14px;
+    color: #fff;
+}
