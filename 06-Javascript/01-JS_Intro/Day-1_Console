@@ -1,0 +1,101 @@
+a = 10;
+10
+b = 12
+12
+a = "Hello"
+"Hello"
+a = 10.5;
+10.5
+a = true
+true
+a = 10
+10
+typeof(a)
+"number"
+a = 10.5
+10.5
+typeof(a)
+"number"
+a = "Hello"
+"Hello"
+typeof(a)
+"string"
+var x = 10
+undefined
+x
+10
+typeof(x)
+"number"
+a
+"Hello"
+a = "10"
+"10"
+b = 10
+10
+a == b
+true
+a === b
+false
+a + b
+"1010"
+c = 12
+12
+a+b+c
+"101012"
+c+b+a
+"2210"
+a instanceof String
+false
+a = 10
+10
+a instanceof Number
+false
+a instanceof Object
+false
+typeof(a)
+"number"
+Number instanceof Object
+true
+arr = [1,2,3,4,5]
+(5) [1, 2, 3, 4, 5]
+typeof(a)
+"number"
+typeof(arr)
+"object"
+arr instanceof Array
+true
+Array instanceof Object
+true
+typeof(Object)
+"function"
+function one(){
+console.log("My First Function")
+}
+undefined
+one()
+VM592:2 My First Function
+undefined
+arr instanceof Object
+true
+typeof(arr)
+"object"
+function two(x,y){
+return x + y
+}
+undefined
+two(2,4)
+6
+two()
+NaN
+typeof(NaN)
+"number"
+NaN instanceof Number
+false
+a = null
+null
+typeof(a)
+"object"
+a instanceof Object
+false
+null instanceof Object
+false
