@@ -6,7 +6,12 @@
 })*/
 
 
-document.getElementById("add").addEventListener("click", add)
+window.addEventListener("load", init);
+
+function init(){
+    /*alert("JS Loaded...")*/
+    document.getElementById("add").addEventListener("click", add)
+}
 
 function add(){
     num_1 = document.getElementById("box_1").value;
