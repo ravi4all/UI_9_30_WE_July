@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>On Change</h1>
+   
+   <input type="text" id="box_1" placeholder="Enter Name" 
+   onchange="show()">
+   <span id="err"></span>
+   
+   <script>
+       function show(){
+           box = document.getElementById("box_1");
+           
+           if (box.value == ""){
+               document.getElementById("err").innerHTML = "You cannot leave this field blank";
+               console.log("Change...")
+           }
+           else {
+               document.getElementById("err").innerHTML = "Proceed";
+               console.log("Change_2...");
+           }
+           
+           /*window.alert("Change Called...")*/
+       }
+    </script>
+    
+</body>
+</html>

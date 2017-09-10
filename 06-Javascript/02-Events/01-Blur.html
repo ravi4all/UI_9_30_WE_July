@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>On Blur</h1>
+   
+   <input type="text" id="box_1" placeholder="Enter Name" 
+   onblur="show()">
+   <span id="err"></span>
+   
+   <script>
+       function show(){
+           box = document.getElementById("box_1").value;
+           
+           if (box.length == 0){
+               document.getElementById("err").innerHTML = "You cannot leave this field blank";
+           }
+           else {
+               document.getElementById("err").innerHTML = "";
+           }
+           
+           /*window.alert("Blur Called...")*/
+       }
+    </script>
+    
+</body>
+</html>
