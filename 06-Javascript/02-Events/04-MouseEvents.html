@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #div_1 {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Mouse Events</h1>
+   
+   <div id="div_1" onmouseover="changeImage(this)" onmouseout="changeImage_2(this)">
+       <img src="../../images/images/l34882-ironman-rigged-original-model--98611.jpg" alt="image">
+   </div>
+   
+   <script>
+       function changeImage(obj){
+           obj.innerHTML = '<img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg">'
+       }
+       function changeImage_2(obj){
+           obj.innerHTML = '<img src="../../images/images/l34882-ironman-rigged-original-model--98611.jpg" alt="image">'
+       }
+    </script>
+    
+</body>
+</html>

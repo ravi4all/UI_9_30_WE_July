@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Key Events</h1>
+   
+   <!--KeyPress
+   KeyDown
+   KeyUp-->
+   
+   <h2>Key Press</h2>
+   <input type="text" placeholder="Enter name" id="box_1" onkeypress="show_1()">
+   <span id="err_1"></span>
+   
+   <h2>Key Down</h2>
+   <input type="text" placeholder="Enter name" id="box_2" onkeydown="show_2()">
+   <span id="err_2"></span>
+   
+   <h2>Key Up</h2>
+   <input type="text" placeholder="Enter name" id="box_3" onkeyup="show_3()">
+   <span id="err_3"></span>
+    
+    
+    <script>
+        function show_1(){
+            var box_1 = document.getElementById("box_1").value;
+            var x = document.getElementById("err_1");
+            x.innerHTML = box_1;
+            /*alert("KeyPressed called...");*/
+        }
+        function show_2(){
+            var box_2 = document.getElementById("box_2").value;
+            var y = document.getElementById("err_2");
+            y.innerHTML = box_2;
+        }
+        function show_3(){
+             var box_3 = document.getElementById("box_3").value;
+            var z = document.getElementById("err_3");
+            z.innerHTML = box_3;
+        }
+    </script>
+</body>
+</html>

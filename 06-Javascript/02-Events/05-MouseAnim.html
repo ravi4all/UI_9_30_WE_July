@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            cursor: url("https://osuskinner.com/uploads/103/cursortrail/1382.png"), auto;
+        }
+        img {
+            width: 550px;
+        }
+        header {
+            background-color: dimgrey;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            transition: 1s;
+        }
+        #header.scrolled {
+            padding: 12px;
+            background-color: lightcoral;
+        }
+        #content {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+   
+   <header id="header">
+       <h1>Mouse Scroll</h1>
+   </header>
+   
+   <div id="content">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+       <img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg" alt="">
+   </div>
+    
+    
+    <script>
+        window.addEventListener("scroll", function(){
+            var elem = document.getElementById("header");
+            var scrollPos = window.scrollY;
+            if (scrollPos > 200) {
+                elem.className = "scrolled";
+            }
+            else {
+                elem.className = "";
+            }
+        })
+    </script>
+</body>
+</html>

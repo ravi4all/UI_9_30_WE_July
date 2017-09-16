@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function show(){
+            /*alert("Form Submitted");*/
+            err = document.getElementById("err");
+            var box = document.getElementById("box_1");
+            if (box.value.length == 0){
+                err.innerHTML = "Cannot leave this field blank";
+                event.preventDefault();
+            }
+        }
+    </script>
+</head>
+<body>
+   
+   <h1>Submit Event</h1>
+   
+   <form action="01-Blur.html" onsubmit="show()">
+       <input type="text" id="box_1" placeholder="Enter name">
+       <br><br> <span id="err"></span>
+       <input type="password" placeholder="Enter password">
+       <br><br>
+       <input type="submit">
+   </form>
+    
+</body>
+</html>
