@@ -10,8 +10,10 @@ function init(){
     c_pwd = document.getElementById("box_3");
     
     u_name.addEventListener("blur", blankCheck);
-    pwd.addEventListener("change", pwdStrength);
-    c_pwd.addEventListener("change", confirmPassword);
+    /*pwd.addEventListener("change", pwdStrength);
+    c_pwd.addEventListener("change", confirmPassword);*/
+    pwd.addEventListener("keyup", pwdStrength);
+    c_pwd.addEventListener("keyup", confirmPassword);
 }
 
 function blankCheck(){
@@ -27,16 +29,27 @@ function blankCheck(){
 function pwdStrength(){
     var err = document.getElementById("err_2")
     if (pwd.value.length == 0){
-        err.innerHTML = "Cannot leave this blank"
+        err.innerHTML = "Cannot leave this blank";
+        /*err.style.width = "auto";
+        err.style.background = "transparent";*/
     }
     else if(pwd.value.length > 0 && pwd.value.length < 5){
         err.innerHTML = "Weak";
+        /*err.style.width = "50px";
+        err.style.background = "red";*/
+        err.className = "weak";
     }
     else if(pwd.value.length >= 5 && pwd.value.length < 8){
         err.innerHTML = "Good";
+        /*err.style.width = "80px";
+        err.style.background = "yellow";*/
+        err.className = "good";
     }
     else {
         err.innerHTML = "Strong";
+        /*err.style.width = "120px";
+        err.style.background = "green";*/
+        err.className = "strong";
     }
 }
 
