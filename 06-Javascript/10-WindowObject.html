@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>  - JavaScript</title>
+<style type="text/css">
+body{
+	font-size: 1.5em;
+	padding: 0px 50px;
+}
+span{
+	color: red;
+	font-weight: bold;
+}
+button{
+position: absolute;
+right: 40px;
+top: 5px;
+}
+</style>
+</head>
+<body>
+<button onclick="window.print()">Print</button>
+<h1 align="center">Why semicolons are needed?</h1>
+<hr/>
+<p>Semicolons can be omitted in javascript but it can be a problem for developers!!</p>
+<p>Java Script is not working here because <br/><span>var</span> sum = a+b<br/>(a+c).toString(); <br/><br/>is being treated as <br/><span>var</span> sum = a+b(a+c).toString();</p>
+<span>Inspect this page and check for the error....</span>
+<script type="text/javascript">
+	var a = 15
+	var b = 60
+	var c = 20
+	var sum = a + b;
+	(a+c).toString();
+	
+	document.write("Sum of two numbers is: "+sum)
+</script>
+</body>
+</html>
+ 
