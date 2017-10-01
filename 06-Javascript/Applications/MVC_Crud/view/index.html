@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="custom.css">
+    
+    <script src="../model/model.js"></script>
+    <script src="../model/ItemObj.js"></script>
+    <script src="../controller/controller.js"></script>
+</head>
+<body>
+   
+   <h1>Item CRUD</h1>
+   
+    <table>
+        <tr>
+            <td>Enter Product Name</td>
+            <td><input type="text" id="box_1" placeholder="Enter Product Name"></td>
+        </tr>
+        <tr>
+            <td>Enter Product Price</td>
+            <td><input type="text" id="box_2" placeholder="Enter Price"></td>
+        </tr>
+        <tr>
+            <td>Enter Product color</td>
+            <td><input type="color" id="box_3"></td>
+        </tr>
+        <tr>
+            <td>Enter Product Description</td>
+            <td><textarea id="box_4" cols="30" rows="10"></textarea></td>
+        </tr>
+    </table>
+    
+    <div>
+        <button id="add">Add</button>
+        <button id="read">Read</button>
+        <button id="update">Update</button>
+        <button id="delete">Delete</button>
+        <button id="search">Search</button>
+        <button id="sort">Sort</button>
+        <button id="save">Save</button>
+        <button id="load">Load</button>
+    </div>
+    
+    <div id="data">
+        <ul id="itemList">
+            
+        </ul>
+    </div>
+    
+</body>
+</html>
