@@ -1,0 +1,100 @@
+function parent(x){
+	function child(){
+		return x+1;
+	}
+}
+undefined
+parent(21)
+undefined
+child()
+VM208:1 Uncaught ReferenceError: child is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM208:1
+function parent(x){
+	function child(){
+		return x+1;
+	}
+	child()
+}
+undefined
+parent(12)
+undefined
+function parent(x){
+	function child(){
+		return x+1;
+	}
+	return child()
+}
+undefined
+parent(12)
+13
+function parent(x){
+	function child(){
+		return x += 1;
+	}
+	return child()
+}
+undefined
+parent(12)
+13
+parent(12)
+13
+parent(12)
+13
+parent(12)
+13
+parent(12)
+13
+function parent(x){
+	function child(){
+		return x += 1;
+	}
+	return child
+}
+undefined
+parent(21)
+ƒ child(){
+		return x += 1;
+	}
+var caller = parent(21);
+undefined
+typeof(caller)
+"function"
+caller()
+22
+caller()
+23
+var x = function(){
+	console.log("I am imediately invoked...")
+}
+undefined
+x()
+VM461:2 I am imediately invoked...
+undefined
+(function(){
+	console.log("I am imediately invoked...")
+})()
+VM479:2 I am imediately invoked...
+undefined
+function add(){
+	x = 12;
+	y = 13;
+}
+undefined
+var x = 10
+undefined
+var y = 12
+undefined
+function add(){
+	x = 12;
+	y = 13;
+	console.log(x+y)
+}
+undefined
+add()
+VM620:4 25
+undefined
+x
+12
+y
+13
