@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>  - JavaScript</title>
+<style type="text/css">
+body{
+	font-size: 1.5em;
+	padding: 0px 50px;
+}
+
+</style>
+</head>
+<body>
+<h1 align="center">Operators in JavaScript</h1>
+<hr/>
+
+	<input type="text" id="addThis" placeholder="Enter here..." /><br/>
+	<input type="button" value="Add Row" onclick="addRow('dataTable')" />
+
+	<input type="button" value="Delete Row" onclick="deleteMyRow('dataTable')" />
+
+	<table id="dataTable" width="350px" border="1">
+		<tr>
+			<th>Delete</th>
+			<th>Name</th>
+		</tr>
+	</table>
+	<script language="javascript">
+		function addRow(tableID) {
+			// if the input field blank
+			if(document.getElementById("addThis").value==""){
+				alert("The field is empty...");
+				return false;
+			}
+
+			var table = document.getElementById(tableID);
+
+			var rowCount = table.rows.length;
+			var row = table.insertRow(rowCount);
+
+			// insert checkbox in first cell
+			var firstCell = row.insertCell(0);
+			var element = document.createElement("input");
+			element.type = "checkbox";
+			element.name="abc";
+			firstCell.appendChild(element);
+			
+			var secondCell = row.insertCell(1);
+			secondCell.innerHTML=document.getElementById("addThis").value;
+
+			// after insertion empty the input field
+			document.getElementById("addThis").value = "";
+		}
+
+		
+		// deleting the row
+		function deleteMyRow(tableID) {
+			try 
+			{
+				var table = document.getElementById(tableID);
+				var rowCount = table.rows.length;
+
+				if(rowCount==1){
+					// i am not using alert to take user input
+					var isConfirm = confirm("Row is not here to delete...");
+					if(isConfirm){
+					var val = prompt("Enter here","");
+					document.getElementById("addThis").value = val;
+					}
+					// break the normal execution
+					return false;
+				}
+	
+				// looking for the selected checkbox
+				for(var i=0; i<rowCount; i++) 
+				{
+					var row = table.rows[i];
+					var chkbox = row.cells[0].childNodes[0];
+					
+					if(null != chkbox && true == chkbox.checked) 
+					{
+						table.deleteRow(i);
+						rowCount--;
+						i--;
+					}
+
+			}
+			}catch(e) {
+				alert(e);
+			}
+		}
+
+	</script>
+
+</body>
+</html>

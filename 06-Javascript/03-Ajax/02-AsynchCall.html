@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Asynch Call</h1>
+   
+   <div id="div_1"></div>
+    
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        function one(){
+            console.log("Function_1");
+        }
+        function two(){
+            console.log("Function_2");
+        }
+        function three(){
+            console.log("Function_3");
+        }
+        function four(){
+            /*document.getElementById("div_1").innerHTML = "Content coming from JS";
+            console.log("Function_4");*/
+            $.get('data.html', function(data){
+                $("#div_1").html(data);
+                console.log("Function_4");
+            });
+        }
+        
+        function five(){
+            console.log("Function_5");
+        }
+        one();
+        two();
+        three();
+        four();
+        five()
+    </script>
+</body>
+</html>
