@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Jquery Events</h1>
+   <input type="text" id="box_1" placeholder="Enter Name">
+   <span id="validation"></span>
+   <h2>Hello <span id="name"></span></h2>
+    
+    
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#box_1").on("blur", function(){
+                var box_1 = $(this).val()
+                if(box_1 == ""){
+                    $(this).css('border','1px solid red');
+                    $("#validation").html("You cannot leave this field blank");
+                }
+                else{
+                    $("#validation").html("");
+                }
+            })
+        })
+    </script>
+</body>
+</html>

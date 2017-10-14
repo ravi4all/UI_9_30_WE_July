@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        img {
+            width: 100%;
+            margin-bottom: 100px;
+        }
+        #header {
+            position: fixed;
+            width: 100%;
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            transition: 1s;
+        }
+        #header.scroll {
+            background-color: rgba(255,0,0,0.5);
+            padding: 5px;
+        }
+        .img_1 {
+            position: fixed;
+            left: -200%;
+            top: 2%;
+            width: auto;
+            transition: 1s;
+            z-index: 2;
+        }
+        body.bodyScroll .img_1 {
+            left: 40%;
+            top: 2%;
+        }
+    </style>
+</head>
+<body>
+   
+   <header id="header">
+       <h1>Scroll Event</h1>
+   </header>
+   
+   <img src="../images/00-22.gif" class="img_1" alt="">
+   
+   <div id="content">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+       <img src="../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg" alt="">
+   </div>
+    
+<script src="jquery-3.2.1.min.js"></script>
+<script src="scroll.js"></script>
+</body>
+</html>
